@@ -2,7 +2,7 @@ import random
 import time
 
 # List of participants
-players = ["Sonu" , "vijay" , "Parvesh"]
+players = ["Sonu" , "vijay" , "Parvesh" , "yashraj"]
 
 
 # List of truth questions
