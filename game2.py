@@ -33,17 +33,14 @@ def spin_bottle(players):
     return selected_player
 
 def ask_truth_or_dare(player):
-    choice = input(f"{player}, Truth or Dare? ").strip().lower()
+    choice = random.choice(['truth', 'dare'])
     
     if choice == 'truth':
         question = random.choice(truth_questions)
-        print(f"{player}, here is your truth question: {question}")
+        print(f"{player} automatically got Truth! Here is the question: {question}")
     elif choice == 'dare':
         dare = random.choice(dare_tasks)
-        print(f"{player}, here is your dare: {dare}")
-    else:
-        print("Invalid choice, please choose 'Truth' or 'Dare'.")
-        ask_truth_or_dare(player)
+        print(f"{player} automatically got Dare! Here is the task: {dare}")
 
 def play_game(players):
     while True:
